@@ -3,6 +3,8 @@ require 'sidekiq/web'
 Neighborly::Application.routes.draw do
   get '/about', to: redirect('/learn')
 
+  post :hooks, to: 'webhook/events#create'
+
   devise_for :users, path: '',
     path_names:  {
       sign_in:  :login,
