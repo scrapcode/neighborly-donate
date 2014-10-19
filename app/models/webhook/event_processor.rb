@@ -32,6 +32,7 @@ module Webhook
     def user_created
       User.observers.disable :all do
         user = User.new(user_attributes)
+        user.skip_confirmation!
 
         user.save(validate: false)
       end
