@@ -16,11 +16,11 @@ br/
   |  #{contact.phone}
 br/
 strong Company Name:
-|  #{contact.company_name}
+|  #{contact.organization_name}
 br/
-- if contact.company_website.present?
+- if contact.organization_website.present?
   strong Company Website:
-  |  #{contact.company_website}
+  |  #{contact.organization_website}
   br/
 
 - if contact.message.present?
