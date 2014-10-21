@@ -1,116 +1,14 @@
 .home-page
   header.hero
     padding-top: +emCalc(45px)
-    padding-bottom: +emCalc(150px)
     min-height: +emCalc(200px)
     h2
-      font-weight: 300
+      font-weight: 400
       text-transform: uppercase
     h3.subtitle
       text-transform: none
       font-size: 140%
       font-weight: 300
-      a
-        margin-left: +emCalc(10px)
-        font-size: 50%
-      .has-tip
-        color: white
-        font-weight: 300
-    p
-      display: none
-      padding: +emCalc(10px)
-      text-align: justify
-      background: rgba(#FFF, 0.2)
-
-  .invest-box-wrapper
-    z-index: 2
-
-  .invest-box
-    margin-top: +emCalc(-150px)
-    padding: +emCalc(15px)
-    background: #FFF
-    h3
-      text-transform: uppercase
-      &.thanks
-        color: $primary-color
-        text-align: center
-
-    .user-image-wrapper
-      text-align: center
-      padding-bottom: +emCalc(10px)
-
-      .profile-image
-        float: none
-        margin: auto
-
-    form
-      margin: 0
-
-    .sign-up-button, .sign-up-with-facebook
-      margin-bottom: 0
-
-    p
-      color: $secondary-color
-
-    .investment-value
-      font-size: 90%
-      margin-bottom: +emCalc(20px)
-
-      .input
-        display: inline
-
-      select
-        width: auto
-        padding-right: +emCalc(15px)
-        font-size: 70%
-
-    .separator
-      border-top: 1px solid $border-color
-      height: 1px
-      margin: 2.4em 0
-      text-align: center
-      clear: both
-      position: relative
-      p
-        text-align: center
-        background: white
-        color: $secondary-font-color
-        width: 30px
-        display: block
-        margin: 0 auto
-        position: relative
-        top: emCalc(-14px)
-    .share
-      .button
-        width: 100%
-    .profile-image
-      float: right
-
-  section.investors
-    margin-top: +emCalc(50px)
-    padding: +emCalc(25px)
-    background: #FFF
-    +clearfix
-
-    h3
-      font-size: 150%
-
-    .profile-image
-      float: left
-      margin: +emCalc(17px)
-
-  section.meanwhile
-    margin: +emCalc(50px, 0)
-    padding: +emCalc(25px)
-    background: image-url('meanwhile-hero.jpg') center center
-    background-size: cover
-    h3
-      font-size: 150%
-      font-weight: 300
-      margin: 0
-      padding: +emCalc(10px)
-      color: white
-      text-transform: uppercase
 
   section.projects
     padding: +emCalc(25px) 0
@@ -150,60 +48,9 @@
         float: right
         margin-right: 0
 
-  section.start-one
-    a
-      display: block
-      background: white
-      padding: +emCalc(15px)
-      text-align: center
-      height: +emCalc(250px)
-      border: 1px solid transparent
-      +single-transition(all, 0.6s)
-      .button
-        margin-top: +emCalc(15px)
-        margin-bottom: +emCalc(5px)
-      .button.with-icon:after
-        @extend .icon-et-right-circled:before
-      h3
-        font-weight: bold
-        margin-left: auto
-        margin-right: auto
-        margin-top: +emCalc(15px)
-      &:hover
-        background: $box-hover-background-color
-        border: 1px solid white
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.30)
-        h3
-          color: $primary-color
-
 @media #{$medium}
   .home-page
     header.hero
-      height: +emCalc(400px)
       h3.subtitle
         font-size: 180%
         text-align: justify
-
-    section.investors, section.meanwhile
-      h3
-        font-size: 190%
-
-    section.investors .profile-image
-      margin: +emCalc(8px)
-
-    .invest-box
-      padding: +emCalc(25px)
-
-      .investment-value
-        font-size: 100%
-        select
-          font-size: 100%
-
-      h3.thanks
-        text-align: left
-
-      .user-image-wrapper
-        text-align: right
-
-        .profile-image
-          float: right
