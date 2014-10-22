@@ -1,6 +1,6 @@
 # Neighbor.ly Donate
 
-[![Build Status](https://secure.travis-ci.org/neighborly/crowdfunding.png?branch=master)](https://travis-ci.org/neighborly/crowdfunding) [![Coverage Status](https://coveralls.io/repos/neighborly/neighborly/badge.png?branch=master)](https://coveralls.io/r/neighborly/neighborly) [![Code Climate](https://codeclimate.com/github/neighborly/crowdfunding.png)](https://codeclimate.com/github/neighborly/crowdfunding) [![Dependency Status](https://gemnasium.com/neighborly/neighborly.png)](https://gemnasium.com/neighborly/neighborly) 
+[![Build Status](https://secure.travis-ci.org/neighborly/neighborly-donate.png?branch=master)](https://travis-ci.org/neighborly/neighborly-donate) [![Coverage Status](https://coveralls.io/repos/neighborly/neighborly-donate/badge.png?branch=master)](https://coveralls.io/r/neighborly/neighborly-donate) [![Code Climate](https://codeclimate.com/github/neighborly/neighborly-donate.png)](https://codeclimate.com/github/neighborly/neighborly-donate) [![Dependency Status](https://gemnasium.com/neighborly/neighborly-donate.png)](https://gemnasium.com/neighborly/neighborly-donate) 
 
 Welcome to the first open source fundraising toolkit for civic projects. Neighbor.ly began in February 2012 as a fork of the wildly successful Brazillian crowdfunding platform [Catarse](https://github.com/catarse/catarse). Working closely with the developers of that project, Neighbor.ly is building towards a full spectrum fundraising toolkit for civic projects.
 
