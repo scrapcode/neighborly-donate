@@ -2,13 +2,13 @@
 
 [![Build Status](https://secure.travis-ci.org/neighborly/neighborly-donate.png?branch=master)](https://travis-ci.org/neighborly/neighborly-donate) [![Coverage Status](https://coveralls.io/repos/neighborly/neighborly-donate/badge.png?branch=master)](https://coveralls.io/r/neighborly/neighborly-donate) [![Code Climate](https://codeclimate.com/github/neighborly/neighborly-donate.png)](https://codeclimate.com/github/neighborly/neighborly-donate) [![Dependency Status](https://gemnasium.com/neighborly/neighborly-donate.png)](https://gemnasium.com/neighborly/neighborly-donate) 
 
-Welcome to the first open source fundraising toolkit for civic projects. Neighbor.ly began in February 2012 as a fork of the wildly successful Brazillian crowdfunding platform [Catarse](https://github.com/catarse/catarse). Working closely with the developers of that project, Neighbor.ly is building towards a full spectrum fundraising toolkit for civic projects.
+Welcome to the first open source fundraising toolkit for civic projects. Neighbor.ly Donate began in February 2012 as a fork of the wildly successful Brazillian crowdfunding platform [Catarse](https://github.com/catarse/catarse). Working closely with the developers of that project, Neighbor.ly is building towards a full spectrum fundraising toolkit for civic projects.
 
 ## An open source fundraising toolkit for civic projects
 
-This is the source code repository running [Neighbor.ly](http://neighbor.ly). We've decided to open source the code for our platform in the hopes that communities will find it useful as they embrace new funding sources for projects once covered by taxes and bonds.
+This is the source code repository running [donate.neighbor.ly](http://donate.neighbor.ly). We've decided to open source the code for our platform in the hopes that communities will find it useful as they embrace new funding sources for projects once covered by taxes and bonds.
 
-Communities are always welcome and encouraged to list their projects on [Neighbor.ly](http://neighbor.ly). This codebase is intended for communities who would rather own and operate their own platforms. We also offer consultancy in setting the platform up as a "white label" extension to your exisitng website, and offer a variety of paid licensed versions built specifically for your needs (often easier and almost always cheaper than implementing this yourself). If you are interested in ways we can help you make the most of civic fundraising please [contact us](http://neighbor.ly).
+Communities are always welcome and encouraged to list their projects on [Neighbor.ly Donate](http://donate.neighbor.ly). This codebase is intended for communities who would rather own and operate their own platforms. We also offer consultancy in setting the platform up as a "white label" extension to your exisitng website, and offer a variety of paid licensed versions built specifically for your needs (often easier and almost always cheaper than implementing this yourself). If you are interested in ways we can help you make the most of civic fundraising please [contact us](http://donate.neighbor.ly).
 
 
 # Getting started
@@ -53,8 +53,8 @@ To get everything working, you'll need to have these dependencies installed in y
 Then, you can run the following commands:
 
 ```bash
-$ git clone https://github.com/neighborly/neighborly.git
-$ cd neighborly
+$ git clone https://github.com/neighborly/neighborly-donate.git
+$ cd neighborly-donate
 $ ./bin/bootstrap
 $ foreman start
 ```
