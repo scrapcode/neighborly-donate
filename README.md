@@ -1,4 +1,6 @@
-# Neighbor.ly [![Build Status](https://secure.travis-ci.org/neighborly/crowdfunding.png?branch=master)](https://travis-ci.org/neighborly/crowdfunding) [![Coverage Status](https://coveralls.io/repos/neighborly/neighborly/badge.png?branch=master)](https://coveralls.io/r/neighborly/neighborly) [![Code Climate](https://codeclimate.com/github/neighborly/crowdfunding.png)](https://codeclimate.com/github/neighborly/crowdfunding) [![Dependency Status](https://gemnasium.com/neighborly/neighborly.png)](https://gemnasium.com/neighborly/neighborly) 
+# Neighbor.ly Donate
+
+[![Build Status](https://secure.travis-ci.org/neighborly/crowdfunding.png?branch=master)](https://travis-ci.org/neighborly/crowdfunding) [![Coverage Status](https://coveralls.io/repos/neighborly/neighborly/badge.png?branch=master)](https://coveralls.io/r/neighborly/neighborly) [![Code Climate](https://codeclimate.com/github/neighborly/crowdfunding.png)](https://codeclimate.com/github/neighborly/crowdfunding) [![Dependency Status](https://gemnasium.com/neighborly/neighborly.png)](https://gemnasium.com/neighborly/neighborly) 
 
 Welcome to the first open source fundraising toolkit for civic projects. Neighbor.ly began in February 2012 as a fork of the wildly successful Brazillian crowdfunding platform [Catarse](https://github.com/catarse/catarse). Working closely with the developers of that project, Neighbor.ly is building towards a full spectrum fundraising toolkit for civic projects.
 
@@ -62,35 +64,6 @@ You are now running Neighborly on http://localhost:3000 with sample configuratio
 ```bash
 $ rails runner db/development_seeds.rb
 ```
-
-## Other Repositories
-
-Neighbor.ly consists of many separate services/gems, each with their own source code repository.
-
-### [Neighborly::Api](https://github.com/neighborly/neighborly-api) [![Build Status](https://travis-ci.org/neighborly/neighborly-api.png?branch=master)](https://travis-ci.org/neighborly/neighborly-api) [![Code Climate](https://codeclimate.com/github/neighborly/neighborly-api.png)](https://codeclimate.com/github/neighborly/neighborly-api)
-
-A Rails Engine that contains our API.
-
-### [Neighborly::Dashboard](https://github.com/neighborly/neighborly-dashboard) [![Build Status](https://travis-ci.org/neighborly/neighborly-dashboard.svg?branch=master)](https://travis-ci.org/neighborly/neighborly-dashboard)
-
-A Rails Engine that contains the Dashboard that is built with [Ember.js](http://emberjs.com) using the API.
-
-
-### [Neighborly::Admin](https://github.com/neighborly/neighborly-admin) [![Build Status](https://travis-ci.org/neighborly/neighborly-admin.png?branch=master)](https://travis-ci.org/neighborly/neighborly-admin) [![Code Climate](https://codeclimate.com/github/neighborly/neighborly-admin.png)](https://codeclimate.com/github/neighborly/neighborly-admin)
-
-A Rails Engine that deal with all the admin section for Neighbor.ly.
-
-### [Neighborly::Balanced](https://github.com/neighborly/neighborly-balanced) [![Build Status](https://travis-ci.org/neighborly/neighborly-balanced.png?branch=master)](https://travis-ci.org/neighborly/neighborly-balanced) [![Code Climate](https://codeclimate.com/github/neighborly/neighborly-balanced.png)](https://codeclimate.com/github/neighborly/neighborly-balanced)
-
-A Rails Engine that contains the base to integrate Neighbor.ly with Balanced Payments.
-
-### [Neighborly::Balanced::Creditcard](https://github.com/neighborly/neighborly-balanced-creditcard) [![Build Status](https://travis-ci.org/neighborly/neighborly-balanced-creditcard.png?branch=master)](https://travis-ci.org/neighborly/neighborly-balanced-creditcard) [![Code Climate](https://codeclimate.com/github/neighborly/neighborly-balanced-creditcard.png)](https://codeclimate.com/github/neighborly/neighborly-balanced-creditcard)
-
-A Rails Engine that integrate Neighbor.ly to Credit Card on Balanced Payments.
-
-### [Neighborly::Balanced::Bankaccount](https://github.com/neighborly/neighborly-balanced-bankaccount) [![Build Status](https://travis-ci.org/neighborly/neighborly-balanced-bankaccount.png?branch=jl-setup-test-env)](https://travis-ci.org/neighborly/neighborly-balanced-bankaccount) [![Code Climate](https://codeclimate.com/github/neighborly/neighborly-balanced-bankaccount.png)](https://codeclimate.com/github/neighborly/neighborly-balanced-bankaccount)
-
-A Rails Engine that integrate Neighbor.ly to Bank Account (ACH) on Balanced Payments.
 
 ## Credits
 
