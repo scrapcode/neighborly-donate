@@ -33,8 +33,8 @@ module Concerns::AuthenticationHandler
     end
 
     def redirect_user_back_after_login
-      if request.env['REQUEST_URI'].present? && !request.xhr?
-        session[:return_to] = request.env['REQUEST_URI']
+      unless request.xhr?
+        session[:return_to] = request.original_url
       end
     end
 
