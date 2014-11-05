@@ -2092,38 +2092,6 @@ ALTER SEQUENCE users_id_seq OWNED BY users.id;
 
 
 --
--- Name: webhook_events; Type: TABLE; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE TABLE webhook_events (
-    id integer NOT NULL,
-    serialized_record hstore,
-    kind character varying(255),
-    created_at timestamp without time zone,
-    updated_at timestamp without time zone
-);
-
-
---
--- Name: webhook_events_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE webhook_events_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: webhook_events_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE webhook_events_id_seq OWNED BY webhook_events.id;
-
-
---
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -2352,13 +2320,6 @@ ALTER TABLE ONLY updates ALTER COLUMN id SET DEFAULT nextval('updates_id_seq'::r
 --
 
 ALTER TABLE ONLY users ALTER COLUMN id SET DEFAULT nextval('users_id_seq'::regclass);
-
-
---
--- Name: id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY webhook_events ALTER COLUMN id SET DEFAULT nextval('webhook_events_id_seq'::regclass);
 
 
 --
@@ -2655,14 +2616,6 @@ ALTER TABLE ONLY updates
 
 ALTER TABLE ONLY users
     ADD CONSTRAINT users_pkey PRIMARY KEY (id);
-
-
---
--- Name: webhook_events_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
---
-
-ALTER TABLE ONLY webhook_events
-    ADD CONSTRAINT webhook_events_pkey PRIMARY KEY (id);
 
 
 --
@@ -4133,4 +4086,6 @@ INSERT INTO schema_migrations (version) VALUES ('20141007210436');
 INSERT INTO schema_migrations (version) VALUES ('20141014002211');
 
 INSERT INTO schema_migrations (version) VALUES ('20141014002212');
+
+INSERT INTO schema_migrations (version) VALUES ('20141105195820');
 
