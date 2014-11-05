@@ -65,15 +65,15 @@ header.contain-to-grid.fixed
 
                 li.divider
                 li
-                  = link_to main_app.destroy_user_session_url(base_domain_with_https_url_params), method: :delete do
+                  = link_to main_app.destroy_user_session_url(base_domain), method: :delete do
                     i.icon-et-cancel-squared
                     = t('.sign-out')
 
-            li.user-action.radius-right.sign-out = link_to t('.sign-out'), main_app.destroy_user_session_url(base_domain_with_https_url_params)
+            li.user-action.radius-right.sign-out = link_to t('.sign-out'), main_app.destroy_user_session_url(base_domain)
 
           - else
-            li.user-action.radius-left.with-divider = link_to t('.sign-up'), main_app.new_user_registration_url(base_domain_with_https_url_params), class: 'sign-up'
-            li.user-action.radius-right = link_to t('.sign-in'), main_app.new_user_session_url(base_domain_with_https_url_params), class: 'sign-in'
+            li.user-action.radius-left.with-divider = link_to t('.sign-up'), main_app.new_user_registration_url(base_domain), class: 'sign-up'
+            li.user-action.radius-right = link_to t('.sign-in'), main_app.new_user_session_url(base_domain), class: 'sign-in'
 
           li.search-box
             = form_tag main_app.discover_path, method: 'GET', class: 'discover-form' do

@@ -7,20 +7,17 @@ module Concerns::AuthenticationHandler
     before_filter :redirect_user_back_after_login, unless: :devise_controller?
     before_filter :configure_permitted_parameters, if: :devise_controller?
     before_filter :force_base_domain_with_ssl, if: :devise_controller?
-    helper_method :base_domain_with_https_url_params
+    helper_method :base_domain
 
-    def base_domain_with_https_url_params
-      if Rails.env.production? && !ENV['IS_STAGING']
-        { protocol: 'https', host: ::Configuration[:base_domain] }
-      else
-        {}
-      end
+    def base_domain
+      { host: ::Configuration[:base_domain] }
     end
 
     private
+
     def force_base_domain_with_ssl
-      if Rails.env.production? && request.subdomain.present? && !ENV['IS_STAGING']
-        redirect_to(protocol: 'https', host: ::Configuration[:base_domain])
+      if channel
+        redirect_to base_domain.merge(protocol: :https)
       end
     end
 
