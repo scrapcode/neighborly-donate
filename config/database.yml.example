@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: neighborly_development
+  database: neighborly_donate_development
   host: localhost
   pool: 5
   username:
@@ -10,7 +10,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: neighborly_test
+  database: neighborly_donate_test
   host: localhost
   pool: 5
   username:
@@ -19,7 +19,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: neighborly_production
+  database: neighborly_donate_production
   host: localhost
   pool: 5
   username:
