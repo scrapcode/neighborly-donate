@@ -1,7 +1,10 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"]      ||= 'test'
-ENV['PLATFORM_FEE']   ||= '0.1'
+ENV['BASE_DOMAIN']    ||= 'example.com'
+ENV['BASE_URL']       ||= 'example.com'
 ENV['EMAIL_PAYMENTS'] ||= 'finan@c.me'
+ENV['HOST']           ||= 'example.com'
+ENV['PLATFORM_FEE']   ||= '0.1'
 
 if ENV['CI']
   require 'coveralls'
