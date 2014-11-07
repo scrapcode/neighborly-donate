@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby_version_file = Pathname.new(__FILE__) + '../.ruby-version'
 ruby IO.read(ruby_version_file).strip
 
-gem 'rails', '4.1.5'
+gem 'rails', '4.1.7'
 
 gem 'rails-observers', '~> 0.1.2'
 gem 'active_model_serializers', '0.8.1'
@@ -31,7 +31,7 @@ gem 'neighborly-balanced', '~> 2.0.0'
 # Neigbhor.ly Engines
 gem 'neighborly-admin', '~> 1.2.0'
 gem 'neighborly-api', '~> 1.0.1'
-gem 'neighborly-dashboard', '~> 1.0.1'
+gem 'neighborly-dashboard', '~> 1.0.2'
 
 # Turns every field on a editable one - Admin dependencies
 gem 'best_in_place', '~> 3.0.0.rc1'
@@ -136,8 +136,8 @@ group :test do
 end
 
 gem 'asset_sync'
-gem 'sass-rails', '~> 4.0.3'
-gem 'coffee-rails', '~> 4.0.1'
+gem 'sass-rails', '~> 4.0.4'
+gem 'coffee-rails', '~> 4.1.0'
 gem 'uglifier'
 gem 'font-icons-rails', github: 'josemarluedke/font-icons-rails', branch: 'fix-svgz'
 gem 'zurb-foundation', '~> 4.3.2'
