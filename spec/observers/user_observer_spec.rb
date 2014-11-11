@@ -13,6 +13,18 @@ describe UserObserver do
       user.valid?
       expect(user.password).to_not be_empty
     end
+
+    it 'adds url protocol if it is missing' do
+      user.other_url = 'neighbor.ly'
+      user.valid?
+      expect(user.other_url).to eq 'http://neighbor.ly'
+    end
+
+    it 'does not add url protocol if it is present' do
+      user.other_url = 'http://neighbor.ly'
+      user.valid?
+      expect(user.other_url).to eq 'http://neighbor.ly'
+    end
   end
 
   describe '#after_commit' do

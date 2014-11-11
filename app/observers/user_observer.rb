@@ -1,6 +1,7 @@
 class UserObserver < ActiveRecord::Observer
   def before_validation(user)
-    user.password = SecureRandom.hex(4) unless user.password || user.persisted?
+    set_password(user)
+    add_url_protocol(user)
   end
 
   def after_commit(user)
@@ -12,6 +13,18 @@ class UserObserver < ActiveRecord::Observer
   end
 
   private
+
+  def set_password(user)
+    user.password = SecureRandom.hex(4) unless user.password || user.persisted?
+  end
+
+  def add_url_protocol(user)
+    return unless user.other_url.present?
+
+    unless URI.parse(user.other_url).scheme
+      user.other_url = "http://#{user.other_url}"
+    end
+  end
 
   def calculate_completeness(user)
     if user.completeness_progress.to_i < 100
