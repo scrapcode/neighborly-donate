@@ -237,7 +237,8 @@ end
 
 desc "Fix user other url"
 task :fix_user_other_url => :environment do
-  User.where.not(other_url: nil).each do |user|
+  User.where.not(other_url: nil).where.not(other_url: 'http://').each do |user|
+    puts "User #{user.id} - #{user.other_url}"
     unless URI.parse(user.other_url).scheme
       user.update_attributes(other_url: "http://#{user.other_url}")
     end
