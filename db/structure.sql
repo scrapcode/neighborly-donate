@@ -1025,7 +1025,8 @@ CREATE TABLE payouts (
     value numeric NOT NULL,
     manual boolean DEFAULT false,
     created_at timestamp without time zone,
-    updated_at timestamp without time zone
+    updated_at timestamp without time zone,
+    bank_account_href character varying(255)
 );
 
 
@@ -4088,4 +4089,6 @@ INSERT INTO schema_migrations (version) VALUES ('20141014002211');
 INSERT INTO schema_migrations (version) VALUES ('20141014002212');
 
 INSERT INTO schema_migrations (version) VALUES ('20141105195820');
+
+INSERT INTO schema_migrations (version) VALUES ('20141125214013');
 
