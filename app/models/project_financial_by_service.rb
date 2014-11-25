@@ -5,7 +5,7 @@ class ProjectFinancialByService
 
   alias_method :payment_method, :payment_service
 
-  def initialize(project, payment_service)
+  def initialize(project, payment_service = nil)
     @project, @payment_service = project, payment_service
   end
 
@@ -34,7 +34,11 @@ class ProjectFinancialByService
   private
 
   def contributions
-    @contributions ||= project.contributions.with_state(:confirmed).
-      where(payment_method: payment_service)
+    @contributions ||= if payment_service.present?
+      project.contributions.with_state(:confirmed)
+        .where(payment_method: payment_service)
+    else
+      project.contributions.with_state(:confirmed)
+    end
   end
 end

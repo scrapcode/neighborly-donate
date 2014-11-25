@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ProjectFinancialsByService do
+describe ProjectFinancialByService do
   subject { described_class.new(project) }
   let(:project) { create(:project, state: 'online') }
   before do
