@@ -24,7 +24,7 @@ class ProjectFinancialByService
   end
 
   def platform_fee
-    contributions.sum(:value) * Configuration[:platform_fee]
+    contributions.sum(:value) * Configuration[:platform_fee].to_f
   end
 
   def total_contributions
