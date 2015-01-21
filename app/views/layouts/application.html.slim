@@ -37,6 +37,7 @@ head
     meta property="og:site_name"    content=::Configuration[:company_name]
     meta property="fb:app_id"       content=::Configuration[:facebook_app_id]
     meta property="og:description"  content=t('site.ograph.description')
+    = render 'layouts/segmentio'
 body.f-topbar-fixed
   = render 'layouts/analytics'
   = initjs_tag app_name: 'Neighborly'
