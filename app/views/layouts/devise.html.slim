@@ -28,9 +28,10 @@ head
     = javascript_include_tag "http://html5shiv.googlecode.com/svn/trunk/html5.js"
   = javascript_include_tag 'vendor/custom.modernizr'
   = javascript_include_tag :application
-  = render 'layouts/analytics'
   = render 'layouts/segmentio'
 body#devise
+  = render 'layouts/google_tag_manager'
+  = render 'layouts/analytics'
   = initjs_tag app_name: 'Neighborly'
   = render 'layouts/loader'
   = yield

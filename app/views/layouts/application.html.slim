@@ -39,6 +39,7 @@ head
     meta property="og:description"  content=t('site.ograph.description')
     = render 'layouts/segmentio'
 body.f-topbar-fixed
+  = render 'layouts/google_tag_manager'
   = render 'layouts/analytics'
   = initjs_tag app_name: 'Neighborly'
   = render_facebook_sdk
